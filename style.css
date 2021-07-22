@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+}
+
+.container {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  padding: 165px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+      grid-template-areas: 'card1 card1 card2  card3' 'card4 card5 card5  card3';
+}
+
+.daniel {
+  grid-area: card1;
+  border-radius: 10px;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card1;
+  width: 540px;
+  height: 280px;
+}
+
+.daniel img {
+  border-radius: 50%;
+}
+
+.daniel h2 {
+  color: white;
+}
+
+.daniel p {
+  color: #cfcfcf;
+}
+
+.jonathan {
+  grid-area: card2;
+  border-radius: 10px;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card2;
+  width: 250px;
+  height: 280px;
+}
+
+.jonathan img {
+  border-radius: 50%;
+}
+
+.jonathan h2 {
+  color: white;
+}
+
+.jonathan p {
+  color: #cfcfcf;
+}
+
+.kira {
+  grid-area: card3;
+  border-radius: 10px;
+  padding: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: card3;
+  width: 250px;
+  height: 575px;
+  background-color: white;
+}
+
+.kira img {
+  border-radius: 50%;
+}
+
+.kira p {
+  color: #48556a;
+}
+
+.jean {
+  grid-area: card4;
+  border-radius: 10px;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card4;
+  width: 250px;
+  height: 270px;
+  background-color: white;
+}
+
+.jean img {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jean p {
+  color: #48556a;
+}
+
+.patrick {
+  grid-area: card5;
+  border-radius: 10px;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: card5;
+  width: 540px;
+  height: 270px;
+  background-color: #19212e;
+}
+
+.patrick img {
+  border-radius: 50%;
+}
+
+.patrick h2 {
+  color: white;
+}
+
+.patrick p {
+  color: #cfcfcf;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: grid,flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: 'card1' 'card2' 'card4' 'card5' 'card3';
+  }
+  .container .daniel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: card1;
+    width: 250px;
+    height: 550px;
+  }
+  .container .jonathan {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: card2;
+  }
+  .container .kira {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: card3;
+  }
+  .container .jean {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: card4;
+  }
+  .container .patrick {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: card5;
+    width: 250px;
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
